@@ -1,4 +1,4 @@
-/*                       DFS algorithm implementation using stack 
+/*                       DFS algorithm implementation using stack for undirected graph with adjacent list representation 
 
 */
 
