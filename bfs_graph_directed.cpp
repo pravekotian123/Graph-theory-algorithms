@@ -1,3 +1,4 @@
+/* This is BFS traversal for directed graph with adjacent list representation*/
 #include<iostream>
 #include<list>
 using namespace std;
