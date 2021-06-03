@@ -1,3 +1,7 @@
+/*                       DFS algorithm implementation using stack 
+
+*/
+
 #include<iostream>
 #include<vector>
 #include<string>
@@ -12,12 +16,12 @@ list<int> *adjlist;
 void DFS_traversal(int V,bool visited[]);
 
 public:
-DFSgraph(int V)
+DFSgraph(int V) //Constructor
 {
   this->v=V;
   adjlist= new list<int> [v];
 }
-void addedge(int V, int w);
+void addedge(int V, int w); // function to implement adjacent list representation
 
 void DFS(int V);
 
@@ -38,7 +42,7 @@ visited[i]=false;
 DFS_traversal(V,visited); 
 }
 
-void DFSgraph::DFS_traversal(int V,bool visited[])
+void DFSgraph::DFS_traversal(int V,bool visited[]) //traverse graph, recursive call acts like stack
 {
 visited[V]=true;
 cout<<V<<" ";
